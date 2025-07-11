@@ -36,14 +36,14 @@ const Banner = () => {
   };
 
   return (
-    <div className="rounded-xl mx-auto   px-4">
+    <div className="rounded-xl mx-auto mt-2   px-4">
       <Slider {...settings}>
         {banners.map((item) => (
           <div key={item.id} className="relative">
             <img
               src={item.image}
               alt={item.title}
-              className="w-full h-screen object-cover rounded-lg"
+              className="w-full object-center  lg:h-screen  h-[60vh] rounded-lg"
             />
             
           </div>

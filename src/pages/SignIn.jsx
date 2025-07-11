@@ -1,5 +1,7 @@
+import Lottie from 'lottie-react';
 import React from 'react';
 import { Link } from 'react-router';
+import animation from "../assets/Animation/login.json"
 
 const SignIn = () => {
     const handleSubmit = (e) => {
@@ -10,6 +12,7 @@ const SignIn = () => {
     return (
          <div className="mt-10 flex items-center justify-center m-auto ">
        <div className="ml-20 lg:block hidden">
+          <Lottie className="h-screen w-[70%]" animationData={animation}></Lottie>
           
        </div>
        <div className="w-full max-w-md p-8 m-auto text-white space-y-3 rounded-xl bg-gray-700 dark:text-gray-800">
@@ -78,7 +81,7 @@ const SignIn = () => {
         {/* ✅ Fixed nested <p> problem */}
         <div className="text-xs text-center sm:px-6 dark:text-gray-600">
           <p>Don't have an account?</p>
-          <Link to="/SignUP" className="hover:underline mt-1 text-[14px] text-[#CAEB66]">
+          <Link to="/SignUp" className="hover:underline mt-1 text-[14px] text-[#CAEB66]">
             Sign up
           </Link>
         </div>
