@@ -6,11 +6,15 @@ import {
  
   RouterProvider,
 } from "react-router";
-import { router } from './pages/route.jsx';
+import { router } from './pages/Route.jsx';
+
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-      <RouterProvider router={router} />
+    <div className='urbanist'>
+       <RouterProvider router={router} />
+    </div>
+     
   </StrictMode>,
 )

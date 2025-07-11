@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, NavLink, } from 'react-router';
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
+import Logo from './logo';
 
 
 const Navbar = () => {
@@ -36,10 +37,10 @@ const Navbar = () => {
        }
       </ul>
     </div>
-    <div className="flex items-center ">
-    <img className="w-[40px]" src="/Image/logo.png" alt="" />
-    <a className="btn lg:block hidden btn-ghost text-2xl text-[#303030]">Profast</a>
-
+    <div className="">
+        <>
+          <Logo></Logo>
+        </>
     </div>
     
   </div>

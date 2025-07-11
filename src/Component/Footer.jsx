@@ -3,6 +3,7 @@ import { FaSquareFacebook,FaLinkedin,FaGithub   } from "react-icons/fa6";
 import { BsInstagram } from "react-icons/bs";
 
 import { NavLink } from 'react-router';
+import Logo from './logo';
 
 const Footer = () => {
     const link = <>
@@ -17,9 +18,10 @@ const Footer = () => {
         <footer> 
     <div className="  h-[450px] bg-[#0F0F0F] flex justify-center mt-10  items-center">
       <div className="">
-        <div className="flex  items-center justify-center">
-          <img className="w-[50px]" src="/Image/logo.png" alt="" />
-          <h1 className="text-3xl font-bold  text-white ">Profast</h1>
+        <div className="flex text-white  items-center justify-center">
+          <>
+             <Logo></Logo>
+          </>
 
         </div>
         <div className= "  text-center  text-white">
