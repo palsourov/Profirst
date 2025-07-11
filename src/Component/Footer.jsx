@@ -6,11 +6,11 @@ import { NavLink } from 'react-router';
 
 const Footer = () => {
     const link = <>
-  <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>Home</NavLink>
-          <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>Coverage</NavLink>
-          <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>About Us</NavLink>
-          <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>Pricing</NavLink>
-          <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>Be a Rider</NavLink>
+  <NavLink to="/" className={({ isActive }) => (isActive ? 'active      text-[#CAEB66] p-2 rounded-full border-b-2 border-[#CAEB66]' : '')}>Home</NavLink>
+          <NavLink to="/Coverage" className={({ isActive }) => (isActive ? 'active text-[#CAEB66] px-2  py-1 rounded-full border-b-2 border-[#CAEB66]' : '')}>Coverage</NavLink>
+          <NavLink to="/AboutUs" className={({ isActive }) => (isActive ? 'active text-[#CAEB66] px-2  py-1 rounded-full border-b-2 border-[#CAEB66]' : '')}>About Us</NavLink>
+          <NavLink to="/Pricing" className={({ isActive }) => (isActive ? 'active text-[#CAEB66] px-2  py-1 rounded-full border-b-2 border-[#CAEB66]' : '')}>Pricing</NavLink>
+          <NavLink to="/BeARider" className={({ isActive }) => (isActive ? 'active text-[#CAEB66] px-2  py-1 rounded-full border-b-2 border-[#CAEB66]' : '')}>Be a Rider</NavLink>
   
       </>
     return (

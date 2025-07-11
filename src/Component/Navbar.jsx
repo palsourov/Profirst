@@ -1,5 +1,7 @@
 import React from 'react';
-import { NavLink, } from 'react-router';
+import { Link, NavLink, } from 'react-router';
+import { BsArrowUpRightCircleFill } from "react-icons/bs";
+
 
 const Navbar = () => {
 
@@ -7,18 +9,18 @@ const Navbar = () => {
 
  const  NavList = (
    <>
-        <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>Home</NavLink>
-        <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>Coverage</NavLink>
-        <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>About Us</NavLink>
-        <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>Pricing</NavLink>
-        <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>Be a Rider</NavLink>
+        <NavLink to="/" className={({ isActive }) => (isActive ? 'active bg-[#CAEB66] px-2 py-1 rounded-full ' : '')}>Home</NavLink>
+        <NavLink to="/Coverage" className={({ isActive }) => (isActive ? 'active bg-[#CAEB66] px-2  py-1  rounded-full' : '')}>Coverage</NavLink>
+        <NavLink to="/AboutUs" className={({ isActive }) => (isActive ? 'active bg-[#CAEB66] px-2  py-1  rounded-full' : '')}>About Us</NavLink>
+        <NavLink to="/Pricing" className={({ isActive }) => (isActive ? 'active bg-[#CAEB66] px-2  py-1  rounded-full' : '')}>Pricing</NavLink>
+        <NavLink to="/BeARider" className={({ isActive }) => (isActive ? 'active bg-[#CAEB66] px-2 py-1 rounded-full' : '')}>Be a Rider</NavLink>
         
    </>
   )
 
      return (
 
-        <div className=" bg-base-100 shadow-sm">
+        <div className=" h-25 items-center flex bg-base-100 shadow-sm">
 <div className='px-10  navbar'>
 
   <div className="navbar-start  ">
@@ -42,15 +44,21 @@ const Navbar = () => {
     
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal gap-x-5 text-xl">
+    <ul className="menu menu-horizontal gap-x-8 text-[18px]">
       
       {
         NavList
       }
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn">Sign In</a>
+  <div className="navbar-end gap-x-2 ">
+    <Link to="/SignIn">
+      <button className="btn text-[18px] hover:bg-[#CAEB66] border-2 border-[#CAEB66] py-6">Sign In</button>
+    </Link>
+
+    <button className="btn bg-[#CAEB66] hover:border-2 border-[#CAEB66]  hover:bg-transparent py-6  text-[18px]">Be a Rider</button>
+    <span className='text-3xl'><BsArrowUpRightCircleFill /></span>
+    
   </div>
   </div>
 </div>
