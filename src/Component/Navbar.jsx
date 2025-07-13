@@ -54,7 +54,7 @@ const Navbar = () => {
   </div>
   <div className="navbar-end gap-x-3 ">
     <Link to="/SignIn">
-      <button className="lg:btn  text-[18px] hover:text-[#CAEB66] lg:hover:bg-[#CAEB66] lg:border-2 lg:border-[#CAEB66] py-6">Sign In</button>
+      <button className="lg:btn  text-[18px] hover:text-black  lg:hover:bg-[#CAEB66] lg:border-2 lg:border-[#CAEB66] py-6 px-8">Sign In</button>
     </Link>
 
     <button className="lg:btn lg:bg-[#CAEB66] lg:hover:border-2 lg:border-[#CAEB66]  hover:text-[#CAEB66]  hover:bg-transparent py-6  text-[18px]">Be a Rider</button>
