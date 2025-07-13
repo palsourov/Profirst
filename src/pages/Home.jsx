@@ -7,6 +7,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import MostService from '../Component/MostService';
 import Merchant from '../Component/Merchant';
+import CustomerReviews from '../Component/CustomerReviews ';
 
 
 
@@ -22,6 +23,7 @@ const Home = () => {
             <BrandLogo></BrandLogo>
             <MostService></MostService>
             <Merchant></Merchant>
+            <CustomerReviews></CustomerReviews>
          
         
         </div>
