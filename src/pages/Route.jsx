@@ -10,6 +10,7 @@ import Pricing from "../Component/Pricing";
 import BeARider from "../Component/BeARider";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
+import FormLayout from "./FormLayout";
 
 
  export const router = createBrowserRouter([
@@ -48,19 +49,25 @@ import SignUp from "./SignUp";
             Component:BeARider,
        
         },
+        
+        
+]
+  },
+  {
+    path:'/',
+    Component:FormLayout,
+    errorElement:<Error />,
+    children:[
         {
-            index: true,
+           
             path: "/SignIn",
             Component:SignIn,
-       
-        },
+       },
         {
-            index: true,
             path: "/SignUp",
             Component:SignUp,
        
         },
-        
 ]
-  },
+  }
 ]);

@@ -9,11 +9,15 @@ import {
 import { router } from './pages/Route.jsx'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import AuthProvaider from './Component/Context/AuthProvaider.jsx';
 AOS.init();
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <div className='urbanist'>
-      <RouterProvider router={router} />
+      <AuthProvaider>
+        <RouterProvider router={router} />
+      </AuthProvaider>
+      
     </div>
   </StrictMode>
 )
